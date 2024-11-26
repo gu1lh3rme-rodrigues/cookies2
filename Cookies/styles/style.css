@@ -1,0 +1,207 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+nav {
+    background-color: #02416D;
+    /* Cor de fundo para a barra de navegação */
+    padding: 10px 20px;
+    /* Espaçamento ao redor do conteúdo */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    /* Centraliza a logo e o título verticalmente */
+}
+
+.logo img {
+    height: 80px;
+    /* Ajusta a altura para garantir melhor alinhamento */
+    margin-right: 10px;
+    /* Espaçamento entre a logo e o título */
+    display: block;
+    /* Remove espaçamentos indesejados de imagem */
+}
+
+h1 {
+    color: #fff;
+    /* Cor do título */
+    font-size: 24px;
+    margin: 0;
+    /* Remove margem padrão do título */
+}
+
+main {
+    flex: 1;
+    /* Faz o main crescer para ocupar o espaço disponível */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    /* Organiza o conteúdo em coluna */
+    align-items: center;
+    /* Centraliza o conteúdo horizontalmente */
+}
+
+main h1 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    /* Adiciona um espaço abaixo do título */
+    color: #AEDD2B;
+    font-size: 30px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#produtos {
+    display: flex;
+    justify-content: space-around;
+    /* Distribui os produtos igualmente na linha */
+    flex-wrap: wrap;
+    /* Permite que os produtos ocupem várias linhas, se necessário */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    /* Centraliza o botão horizontalmente */
+    margin-top: 20px;
+    /* Adiciona um espaço acima do botão */
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #AEDD2B;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #8ab62b;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza o conteúdo no meio da div */
+    padding: 10px;
+    text-align: center;
+}
+
+.produto img {
+    width: 200px;
+    /* Ajuste o tamanho conforme necessário */
+    height: 200px;
+    margin-bottom: 10px;
+    /* Espaço entre a imagem e o nome */
+    border: 1px solid #02416D;
+    border-radius: 10%;
+}
+
+.produto p {
+    margin: 5px 0;
+}
+
+.produto input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+.logout {
+    margin: 20px;
+    /* Espaçamento ao redor do logout */
+    text-align: center;
+    /* Centraliza o link no container */
+}
+
+.logout a {
+    font-size: 16px;
+    /* Tamanho da fonte para melhor leitura */
+    color: #fff;
+    /* Cor do texto */
+    background-color: #02416D;
+    /* Cor de fundo do botão */
+    padding: 10px 20px;
+    /* Espaçamento interno para aparência de botão */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    border-radius: 5px;
+    /* Arredonda os cantos */
+    transition: background-color 0.3s, color 0.3s;
+    /* Animações suaves para hover */
+}
+
+.logout a:hover {
+    background-color: #8ab62b;
+    /* Cor de fundo ao passar o mouse */
+    color: #fff;
+    /* Mantém o texto legível */
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #02416D;
+    color: #fff;
+}
+
+td img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tfoot td {
+    font-weight: bold;
+    color: #02416D;
+    background-color: #AEDD2B;
+}
+
+footer {
+    background-color: #d1f0cb;
+    color: #206bac;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
